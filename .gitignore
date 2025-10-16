@@ -1,0 +1,27 @@
+# Python
+__pycache__/
+*.py[cod]
+*.pyo
+.Python
+.venv/
+venv/
+env/
+
+# Jupyter
+.ipynb_checkpoints
+
+# Models / data
+models/
+*.keras
+*.h5
+data/
+tokenizer.pickle
+kaggle/input/
+
+# IDEs
+.vscode/
+.idea/
+
+# OS
+.DS_Store
+Thumbs.db
