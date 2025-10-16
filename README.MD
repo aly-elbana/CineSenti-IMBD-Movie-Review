@@ -96,11 +96,3 @@ Paste a movie review and click **Predict** to get instant sentiment analysis.
 - Large files (models, raw data) are excluded from Git via `.gitignore` to keep the repository clean.
 
 ---
-
-## ❤️ Future Enhancements (Optional)
-If you’d like, I can help you:
-- Add a **notebook cell** that automatically saves the model and tokenizer after training (copy-paste ready).  
-- Replace **kagglehub** steps with local `data/` loading instructions for offline environments.
-
----
-
