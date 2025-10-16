@@ -10,13 +10,12 @@ from nltk.stem import WordNetLemmatizer
 from tensorflow.keras.models import load_model
 from tensorflow.keras.preprocessing.sequence import pad_sequences
 
-# Ensure NLTK resources (only downloads if missing)
 nltk.download("stopwords", quiet=True)
 nltk.download("punkt", quiet=True)
 nltk.download("wordnet", quiet=True)
 STOP_WORDS = set(stopwords.words("english"))
 
-MAXLEN = 100  # must match notebook maxlen
+MAXLEN = 100
 
 def preprocess_text(text: str) -> str:
     text = text.lower()
@@ -35,7 +34,6 @@ def preprocess_text(text: str) -> str:
 st.title("IMDB Movie Review — Sentiment (LSTM + GloVe)")
 st.markdown("Paste a movie review and get a prediction. Requires `sent-analysis.keras` and `tokenizer.pickle` in project root.")
 
-# Load model + tokenizer
 model = None
 tokenizer = None
 try:
